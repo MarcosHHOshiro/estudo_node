@@ -4,7 +4,7 @@
   "description": "treinando node pro projeto de tcc",
   "main": "teste.js",
   "scripts": {
-    "start": "node teste.js",
+    "start": "node app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
