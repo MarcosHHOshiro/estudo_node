@@ -6,6 +6,13 @@ app.get("/", function(req, res){
     res.send("cu2")
 })
 
+app.get("/user/:nome/sobrenome/:sobrenome", function(req, res){
+    res.send({
+        nome: req.params.nome,
+        sobrenome: req.params.sobrenome,
+    })
+});
+
 app.listen(8080, function(){
     console.log("Servidor rodando")
 });
