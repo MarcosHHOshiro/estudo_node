@@ -2,6 +2,7 @@
   "name": "estudo_node",
   "version": "1.0.0",
   "description": "treinando node pro projeto de tcc",
+  "type": "module",
   "main": "teste.js",
   "scripts": {
     "dev": "npx nodemon app.js",
