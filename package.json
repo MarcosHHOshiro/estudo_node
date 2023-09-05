@@ -4,6 +4,7 @@
   "description": "treinando node pro projeto de tcc",
   "main": "teste.js",
   "scripts": {
+    "dev": "npx nodemon app.js",
     "start": "node app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -11,5 +12,8 @@
   "license": "ISC",
   "dependencies": {
     "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
   }
 }
