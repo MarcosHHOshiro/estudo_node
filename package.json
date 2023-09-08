@@ -6,7 +6,7 @@
   "main": "teste.js",
   "scripts": {
     "dev": "npx nodemon app.js",
-    "start": "node app.js",
+    "start": "node src/app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",

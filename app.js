@@ -1,17 +1,11 @@
 import express from 'express'
+import { userRouter } from './src/modules/user/user.controller.js';
+import { productRouter } from './src/modules/products/product.controller.js';
 
-const app = express()
+const app = express();
 
-app.get('/', function (req, res) {
-  res.send('Hello world');
-});
-
-app.get('/user/:nome/sobrenome/:sobrenome', function (req, res) {
-  res.send({
-    nome: req.params.nome,
-    sobrenome: req.params.sobrenome,
-  });
-});
+app.use(userRouter);
+app.use(productRouter);
 
 app.listen(8080, function () {
   console.log('Servidor rodando');
